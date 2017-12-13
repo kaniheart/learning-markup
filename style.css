@@ -5,39 +5,36 @@
   border-radius: 10px;
 }
 
-.content.recipe {
+.content {
   margin: 12px;
   float: left;
   width: 900px;
   padding-bottom: 20px;
+}
+
+.content h2 {
+  margin-top: 0;
+  padding: 0.3em;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+.content.recipe {
   background: #ffc;
   border: 1px solid #f60;
 }
 
 .content.recipe h2 {
-  margin-top: 0;
-  padding: 0.3em;
-  color: #fff;
   background: #f60;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
 .content.comments {
-  margin: 12px;
-  float: left;
-  width: 900px;
-  padding-bottom: 20px;
   background: #9c9;
   border: 1px solid #96cc29;
 }
 
 .content.comments h2 {
-  margin-top: 0;
-  width: 900px;
-  padding: 0.3em;
-  color: #fff;
   background: #96cc29;
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
 .side-menu {
