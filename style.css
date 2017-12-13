@@ -1,46 +1,43 @@
 .page-header {
   color: #c94646;
   margin: 10px auto;
-  border-style : solid;
+  border: 1px solid #f60;
   border-radius: 10px;
-  border-color: #ff6600;
 }
 
-b.font { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif; }
-
 .content.recipe {
-  margin: 12px 12px 12px 12px;
+  margin: 12px;
   float: left;
   width: 900px;
   padding-bottom: 20px;
-  border-style : solid;
-  border-color: #ff6600;
-  background-color: #FFFFCC;
+  background: #ffc;
+  border: 1px solid #f60;
 }
 
 .content.recipe h2 {
   margin-top: 0;
   padding: 0.3em;
-  color: #ffffff;
-  background-color: #ff6600;
+  color: #fff;
+  background: #f60;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
 .content.comments {
-  margin: 12px 12px 12px 12px;
+  margin: 12px;
   float: left;
   width: 900px;
   padding-bottom: 20px;
-  border-style : solid;
-  border-color: #96cc29;
-  background-color: #99CC99;
+  background: #9c9;
+  border: 1px solid #96cc29;
 }
 
 .content.comments h2 {
   margin-top: 0;
   width: 900px;
   padding: 0.3em;
-  color: #ffffff;
-  background-color: #96cc29;
+  color: #fff;
+  background: #96cc29;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
 }
 
 .side-menu {
@@ -48,10 +45,9 @@ b.font { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
   width: 450px;
   height: 500px;
   font-size: 20px;
-  border-style : solid;
+  background: #ff9;
+  border: 1px solid #f60;
   border-radius: 10px;
-  border-color: #ff6600;
-  background-color: #FFFF99;
 }
 
 .side-menu a,
@@ -59,22 +55,20 @@ b.font { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
   color: #6b4700;
 }
 
-
 .footer {
   width: 100%;
-  padding: 5px 0px 5px;
+  padding: 5px 0;
   height: 20px;
   position: fixed;
   bottom: 0;
-  background-color: #6b4700;
+  background: #6b4700;
 }
 
 .copyright {
-  margin-top: 0px;
+  margin-top: 0;
   text-align: center;
   letter-spacing: 1px;
-  color: #ffffff;
-
+  color: #fff;
 }
 
 .ingredients {
@@ -83,24 +77,24 @@ b.font { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
 
 /* ページトップへ戻るボタン */
 .back-to-top {
-  position:fixed;
-  bottom:35px;
-  right:10px;
-  padding:10px 20px;
-  font-size:20px;
-  text-decoration:none;
-  background:#ffa500;
+  position: fixed;
+  bottom: 35px;
+  right: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  text-decoration: none;
+  background: #ffa500;
   visibility: hidden;
   opacity: 0;
   transition: 0.5s;
 }
 
 .back-to-top a {
-  color:#fff;
+  color: #fff;
 }
 
 .back-to-top a:hover {
-  background:#ffb833;
+  background: #ffb833;
 }
 
 .visible {
