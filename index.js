@@ -1,22 +1,21 @@
-(function ($) {
-  /** ページトップ処理 **/
-  // スクロールした場合
-  $(window).scroll(function() {
-    // スクロール位置が200を超えた場合
-    if ($(this).scrollTop() > 200) {
-      $('#pagetop').fadeIn();
+;(function () {
+  window.addEventListener('scroll', handleWindowScroll);
+
+  function handleWindowScroll() {
+    const $backToTop = document.getElementById('back-to-top');
+    if (window.scrollY > 200) {
+      $backToTop.classList.add('visible');
     } else {
-      // ページトップへをフェードアウト
-      $('#pagetop').fadeOut();
+      $backToTop.classList.remove('visible');
     }
-  });
+  }
 
   // ページトップクリック
-  $('#pagetop').click(function() {
+  $('#back-to-top a').click(function() {
     // ページトップへスクロール
     $('html, body').animate({
       scrollTop: 0
     }, 300);
     return false;
   });
-})(jQuery);
+})();

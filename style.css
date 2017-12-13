@@ -82,18 +82,28 @@ h3.comment-title {
 }
 
 /* ページトップへ戻るボタン */
-#pagetop {
-    position:fixed;
-    bottom:35px;
-    right:10px;
-    padding:10px 20px;
-    color:#fff;
-    font-size:20px;
-    text-decoration:none;
-    background:#ffa500;
+.back-to-top {
+  position:fixed;
+  bottom:35px;
+  right:10px;
+  padding:10px 20px;
+  font-size:20px;
+  text-decoration:none;
+  background:#ffa500;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
 }
 
-/* ページトップへ戻るボタン：ホバー時 */
-#pagetop:hover {
-    background:#ffb833;
+.back-to-top a {
+  color:#fff;
+}
+
+.back-to-top a:hover {
+  background:#ffb833;
+}
+
+.visible {
+  visibility: visible;
+  opacity: 1;
 }
