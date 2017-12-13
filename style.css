@@ -1,4 +1,4 @@
-.header {
+.page-header {
   color: #c94646;
   margin: 10px auto;
   border-style : solid;
@@ -8,7 +8,7 @@
 
 b.font { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif; }
 
-.main {
+.content.recipe {
   margin: 12px 12px 12px 12px;
   float: left;
   width: 900px;
@@ -18,14 +18,14 @@ b.font { font-family: "ＭＳ Ｐゴシック","ＭＳ ゴシック",sans-serif;
   background-color: #FFFFCC;
 }
 
-h2.item-title {
+.content.recipe h2 {
   margin-top: 0;
   padding: 0.3em;
   color: #ffffff;
   background-color: #ff6600;
 }
 
-.comment-main {
+.content.comments {
   margin: 12px 12px 12px 12px;
   float: left;
   width: 900px;
@@ -35,7 +35,7 @@ h2.item-title {
   background-color: #99CC99;
 }
 
-h3.comment-title {
+.content.comments h2 {
   margin-top: 0;
   width: 900px;
   padding: 0.3em;
@@ -43,7 +43,7 @@ h3.comment-title {
   background-color: #96cc29;
 }
 
-.sidemenu {
+.side-menu {
   float: right;
   width: 450px;
   height: 500px;
@@ -54,8 +54,8 @@ h3.comment-title {
   background-color: #FFFF99;
 }
 
-.sidemenu a,
-.sidemenu a:link {
+.side-menu a,
+.side-menu a:link {
   color: #6b4700;
 }
 
