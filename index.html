@@ -9,26 +9,28 @@
 
 <body>
   <header class="page-header" id="top">
-    <h1>役立ち料理サイト</h1>
+      <h1><p class="first-line">役立ち料理サイト</h1>
+    </p>
     <h2>カレーのレシピ</h2>
     <p>
       誰でもできる、美味しいカレーの作り方です。旦那も息子もこのカレーが大好物。<br>
       ポイントは玉ねぎと人参はミキサーで細かくしてしまうところ。逆にコクのある美味しいカレーになります。<br>
     </p>
-    <dl>
+    <dl class="author">
       <dt>レシピの作者</dt>
       <dd>山田サチ子さん</dd>
     </dl>
   </header>
-
+<!--
   <aside class="back-to-top" id="back-to-top">
     <a href="#top">ページTOPへ ▲</a>
   </aside>
+-->
 
   <div class="wrapper">
-    <aside class="side-menu">
-      <nav>
-        <ul>
+    <nav class="sidebar" id="sidebar">
+      <nav class="menu" id="menu">
+        <ul class="index">
           <li><a href="#ingredient">材料</a></li>
           <li><a href="#seasoning">調味料</a></li>
           <li><a href="#procedure">作り方</a></li>
@@ -36,7 +38,7 @@
           <li><a href="#background">このレシピの生い立ち</a></li>
         </ul>
       </nav>
-    </aside>
+    </nav>
 
     <main>
       <section class="content recipe" id="ingredient">
@@ -126,7 +128,7 @@
           <li>
             <p>うちでも試してみました。とても美味しかったです。ありがとうございます。</p>
             <footer>
-              <dl>
+              <dl class="author">
                 <dt>投稿者</dt>
                 <dd>岩鬼正美さん</dd>
               </dl>
@@ -135,10 +137,14 @@
           <li>
             <p>うちの息子も野菜嫌いなのですが、このカレーは美味しく何度もおかわりしてました。</p>
             <footer>
-              <dl>
+              <dl class="author">
                 <dt>投稿者</dt>
                 <dd>殿馬数人さん</dd>
               </dl>
+              <p>コメント:<br>
+                <textarea name="comments" rows="5" cols="100">コメントをどうぞ。</textarea>
+              <p>投稿者:<br>
+                <textarea name="comments" rows="0" cols="100"></textarea>
             </footer>
           </li>
         </ul>
@@ -147,10 +153,12 @@
   </div>
 
   <footer class="footer">
-   <p class="copyright">Copyright ©︎2017 SAMPLE SITE</p>
+   <p class="copyright">&copy; 2017 SAMPLE SITE</p>
   </footer>
 
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <!--
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  -->
   <script src="./index.js"></script>
 </body>
 </html>

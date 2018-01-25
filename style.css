@@ -6,39 +6,69 @@ body {
 
 .wrapper {
   display: flex;
+  padding: 0 12px;
 }
 
-.wrapper main {
+main {
   order: 0;
 }
 
-/* サイドメニュー */
-.side-menu {
-  order: 1;
-  width: 450px;
-  height: 500px;
-  background: #ff9;
-  border: 1px solid #f60;
-  border-radius: 10px;
-  font-size: 20px;
+.first-line {
+  margin-top: 0;
+  padding: 0.3em;
+  color: #fff;
+  background: #ff6600;
 }
 
-.side-menu a,
-.side-menu a:link {
+
+/* サイドバー */
+.sidebar {
+  order: 1;
+  width: 450px;
+  margin-left: 12px;
+  margin-right: 12px;
+  position: relative;
+}
+
+/* サイドメニュー */
+.menu {
+  background: #ff9;
+  border: 2px solid #f60;
+  border-radius: 10px;
+  font-size: 20px;
+  padding: 12px 6px;
+}
+
+.js-fixed-menu {
+  position: fixed;
+  top: 0;
+}
+
+.menu a {
   color: #6b4700;
+  text-decoration: #f60 double underline;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Original Yu Gothic", "Yu Gothic", YuGothic, Verdana, Meiryo, "M+ 1p", sans-serif;
+}
+
+.menu a:hover {
+  color: #f60;
+}
+
+.index {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .page-header {
   color: #c94646;
   margin: 10px auto;
-  border: 1px solid #f60;
+  border: 3px solid #f60;
   border-radius: 10px;
 }
 
 .content {
-  margin: 12px;
-  width: 900px;
+  margin-bottom: 12px;
   padding-bottom: 20px;
 }
 
@@ -51,7 +81,7 @@ body {
 
 .content.recipe {
   background: #ffc;
-  border: 1px solid #f60;
+  border: 2px solid #f60;
 }
 
 .content.recipe h2 {
@@ -59,12 +89,20 @@ body {
 }
 
 .content.comments {
-  background: #9c9;
-  border: 1px solid #96cc29;
+  background: #d9ffc7;
+  border: 2px solid #96cc29;
+  border-radius: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 35px;
 }
 
 .content.comments h2 {
   background: #96cc29;
+  border-radius: 10px;
+}
+
+.author{
+  text-align: right;
 }
 
 .footer {
@@ -88,6 +126,7 @@ body {
 }
 
 /* ページトップへ戻るボタン */
+/*
 .back-to-top {
   position: fixed;
   bottom: 35px;
@@ -103,6 +142,7 @@ body {
 
 .back-to-top a {
   color: #fff;
+  text-decoration: none;
 }
 
 .back-to-top a:hover {
@@ -113,3 +153,4 @@ body {
   visibility: visible;
   opacity: 1;
 }
+*/

@@ -1,15 +1,29 @@
 ;(function () {
-  window.addEventListener('scroll', handleWindowScroll);
-
   function handleWindowScroll() {
     const $backToTop = document.getElementById('back-to-top');
-    if (window.scrollY > 200) {
+    // スクロール位置が２５０を超えたら表示される
+    if (window.scrollY > 250) {
       $backToTop.classList.add('visible');
     } else {
       $backToTop.classList.remove('visible');
     }
   }
 
+  function fixSideMenu() {
+    const $sidebar = document.getElementById('sidebar');
+    const $menu = document.getElementById('menu');
+
+    if (window.scrollY > $sidebar.offsetTop) {
+      $menu.classList.add('js-fixed-menu');
+    } else {
+      $menu.classList.remove('js-fixed-menu');
+    }
+  }
+
+  window.addEventListener('scroll', handleWindowScroll, { passive: true });
+  window.addEventListener('scroll', fixSideMenu, { passive: true });
+
+  /*
   // ページトップクリック
   $('#back-to-top a').click(function() {
     // ページトップへスクロール
@@ -18,4 +32,5 @@
     }, 300);
     return false;
   });
+  */
 })();
